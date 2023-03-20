@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Nathan Bonnell</title>
+        <link rel="stylesheet" href="./src/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Nathan Bonnell</h1>
+            <p>Étudiant à Ynov Informatique</p>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#experience">Expérience</a>
+                </li>
+                <li>
+                    <a href="#education">Éducation</a>
+                </li>
+                <li>
+                    <a href="#skills">Compétences</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </header>
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Nathan Bonnell, je suis passionné d'informatique depuis longtemps j'ai participé à de nombreux projets</p>
+        </section>
+
+        <section id="experience">
+            <h2>Expérience professionnelle</h2>
+            <div class="job">
+                <h3>Titre du poste</h3>
+                <p>
+                    <strong>Nom de l'entreprise</strong> | Ville, Pays | Dates
+                </p>
+                <ul>
+                <li>Description de vos responsabilités et réalisations</li>
+                <li>Description de vos responsabilités et réalisations</li>
+                <li>Description de vos responsabilités et réalisations</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Titre du poste</h3>
+                <p><strong>Nom de l'entreprise</strong> | Ville, Pays | Dates</p>
+                <ul>
+                <li>Description de vos responsabilités et réalisations</li>
+                <li>Description de vos responsabilités et réalisations</li>
+                <li>Description de vos responsabilités et réalisations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Formation</h2>
+            <div class="school">
+                <h3>Sainte Marie Grand Lebrun</h3>
+                <p>Bac général | Bordeaux, France | 2022</p>
+            </div>
+            <div class="school">
+                <h3>Ynov Informatique</h3>
+                <p>Informatique RNCP niveau 7 | Bordeaux, France | 2027</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Compétence 1</li>
+                <li>Compétence 2</li>
+                <li>Compétence 3</li>
+                <li>Compétence 4</li>
+                <li>Compétence 5</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+        <footer>
+            <p>&copy; Nathan Bonnell | Tous droits réservés</p>
+        </footer>
+    </body>
+</html>
+        

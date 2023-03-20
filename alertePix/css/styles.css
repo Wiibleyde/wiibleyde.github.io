@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+body .main {
+    width: 100%;
+    height: 95vh;
+    background: radial-gradient(rgba(43, 31, 29, 0.6), rgba(43, 31, 29, 0.664));
+    position: relative;
+    z-index: 1;
+}
+
+body footer {
+    width: 100%;
+    height: 5vh;
+    background: radial-gradient(rgba(43, 31, 29, 0.6), rgba(43, 31, 29, 0.664));
+    position: relative;
+}
+
+body footer a {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.5%;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-size: 2vh;
+}
+
+.createurs {
+position: absolute;
+font-size: 2vh;
+text-align: center;
+color: rgb(255, 255, 255);
+position: absolute;
+bottom: 0%;
+right: 50%;
+transform: translateX(50%);
+padding: 1%;
+border-radius: 5px;
+background: rgba(43, 31, 29, 0.3)
+}
+
+.form {
+  position: absolute;
+  right: 0%;
+
+}
+
+body footer a:hover {
+    background-color:white;
+    color: rgba(43, 31, 29, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    height: auto;
+    width: 15%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 20;
+}
+
+.logo-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.dropdown {
+    width: 100%;
+    height: 20vh;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(rgba(43, 31, 29, 0.6), rgba(43, 31, 29, 0.664));
+}
+
+.dropdown ul li {
+    list-style: none;
+}
+
+.gl, .office, .nav, .doc, .ecoledirecte {
+    position: relative;
+}
+
+.gl ul, .office ul, .nav ul, .doc ul, .ecoledirecte ul {
+    margin-top: 10px;
+    position: absolute;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px auto;
+    background: rgba(240, 235, 235, 0.7);
+    left: 50%;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: -10;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    top:-1000px;
+}
+
+.gl li, .office li, .nav li, .doc li, .ecoledirecte li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+    padding: 0;
+    margin-left: 50%;
+}
+
+.gl li a:hover, .office li a:hover, .nav li a:hover, .doc li a:hover, .ecoledirecte li a:hover {
+    background-color:rgba(43, 31, 29, 0.6);
+    color: white;
+}
+
+.gl a, .office a, .nav a, .doc a, .ecoledirecte a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown button, .dropdown .gl button a, .dropdown .ecoledirecte a {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.gl button:focus + ul, .gl ul:hover, .office button:focus + ul, .office ul:hover, .nav button:focus + ul, .nav ul:hover, .doc button:focus + ul, .doc ul:hover, .ecoledirecte button:focus + ul, .ecoledirecte ul:hover {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+    transform: translateY(0px);
+    transform: translateX(-50%);
+    z-index: 10;
+    top:auto;
+}
+.gl button a:hover, .office button:hover, .nav button:hover, .doc button:hover, .ecoledirecte button a:hover {
+    background: white;
+    color:rgba(43, 31, 29, 0.9);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.vid {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+    transform: translateY(-50%);
+}
+
+.dropdown .office button, .nav button, .doc button, .gl a, .ecoledirecte a{
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.cour {
+    visibility: hidden;
+}
+
+.secret {
+    text-align: center;
+    padding-top: 31%;
+    color: white;
+}
+
+.secret-titre {
+    font-size: 3vh;
+}
+
+.secret-texte {
+    font-size: 2vh;
+}
+
+.pix {
+    margin-top: 20%;
+    margin-bottom: 0%;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba(240, 235, 235, 0.7);
+}
+
+.urgent {
+    font-size: 7vh;
+}
+
+.urgent-text-ter {
+    font-size: 5vh;
+}
+
+.urgent-link {
+    color: red;
+    text-decoration: underline;
+}
+
+.urgent-text {
+    font-size: 4vh;
+}
+
+#test{
+    animation: Test 3s infinite;
+}
+
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media (orientation: portrait) {
+    .vid {
+        display: none;
+    }
+    .cour {
+        visibility: visible;
+        width: auto;
+        height: 100%;
+
+    }
+    .gl ul, .office ul, .nav ul, .doc ul, .ecoledirecte ul {
+        margin-top: 25vh;
+        position: absolute;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        background: rgba(240, 235, 235, 0.7);
+        left: 50%;
+        list-style: none;
+        border-radius: 5px;
+        opacity: 0;
+        z-index: -10;
+        transform: translateY(-10px);
+        transition: all 0.4s ease;
+        top:-1000px;
+    }
+    .dropdown {
+        width: auto;
+        height: 100%;
+        z-index: 10;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        background: radial-gradient(rgba(43, 31, 29, 0.6), rgba(43, 31, 29, 0.664));
+    }
+    .gl li, .office li, .nav li, .doc li, .ecoledirecte li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gl, .office, .nav, .doc, .ecoledirecte {
+        padding: 8px;
+        text-align: center;
+    }
+    .dropdown button, .dropdown .gl button a, .dropdown .ecoledirecte a {
+        background: none;
+        text-decoration: none;
+        border: none;
+        color: white;
+        font-size: 2.4vh;
+        cursor: pointer;
+
+    }
+
+    .invisible {
+        visibility: hidden;
+        display: none;
+    }
+
+    .secret {
+        visibility: hidden;
+        display: none;
+    }
+
+    .gl a, .office a, .nav a, .doc a, .ecoledirecte a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 2vh;
+    }
+    .gl button:focus + ul, .gl ul:hover, .office button:focus + ul, .office ul:hover, .nav button:focus + ul, .nav ul:hover, .doc button:focus + ul, .doc ul:hover, .ecoledirecte button:focus + ul, .ecoledirecte ul:hover {
+        opacity: 1;
+        pointer-events: all;
+        display: flex;
+        transform: translateY(0px);
+        transform: translateX(-50%);
+        z-index: 10;
+        top:auto;
+    }
+    body footer a{
+        font-size: 1.5vh;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        width: 35%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+    .gl button a:hover, .office button:hover, .nav button:hover, .doc button:hover, .ecoledirecte button a:hover {
+        background: white;
+        color:rgba(43, 31, 29, 0.9);
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .createurs {
+        position: absolute;
+        font-size: 2vh;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 12.5%;
+        right: 50%;
+        transform: translateX(50%);
+        padding: 1%;
+        border-radius: 5px;
+        background: rgba(43, 31, 29, 0.3);
+    }
+
+    .pix {
+        margin-top: 20%;
+        margin-bottom: 0%;
+        color: red;
+        font-weight: bolder;
+        text-align: center;
+        background-color: rgba(240, 235, 235, 0.7);
+        position:absolute;
+        top:45%;
+        left: 20%;
+    }
+    
+    .urgent {
+        font-size: 5vh;
+    }
+    
+    .urgent-text-ter {
+        font-size: 3vh;
+    }
+    
+    .urgent-link {
+        color: red;
+    }
+    
+    .urgent-text {
+        font-size: 2vh;
+    }
+}
