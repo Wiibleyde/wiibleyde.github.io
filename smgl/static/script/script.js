@@ -40,18 +40,18 @@ function lazyLoadVideo(videoElement) {
     observer.observe(videoElement);
 }
 
-function randomPos() {
+function randomPos(id) {
     console.log("Un secret est caché dans une position aléatoire du site.")
     var random = Math.floor(Math.random() * 100);
     var random2 = Math.floor(Math.random() * 100);
-    document.getElementById("randomPos").style.cssText = "position: absolute;";
-    document.getElementById("randomPos").style.top = random + "%";
-    document.getElementById("randomPos").style.left = random2 + "%";
+    document.getElementById(id).style.cssText = "position: absolute;";
+    document.getElementById(id).style.top = random + "%";
+    document.getElementById(id).style.left = random2 + "%";
     random1sqrt = Math.sqrt(random)
     random2sqrt = Math.sqrt(random2)
     console.log("Position: " + random1sqrt + "%, " + random2sqrt + "%");
 }
 
-randomPos()
+randomPos("randomPos")
 
 lazyLoadVideo(videoElement);

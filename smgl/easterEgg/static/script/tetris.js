@@ -148,7 +148,7 @@ Piece.prototype.lock = function(){
             if(this.y + r < 0){
                 alert("Vous avez perdu.");
                 gameOver = true;
-                window.open ('https://portail.grandlebrun.com','_self',false);
+                window.open ('/smgl','_self',false);
             }
             board[this.y+r][this.x+c] = this.color;
         }
