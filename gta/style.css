@@ -1,0 +1,294 @@
+.logo{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+
+.logo img{
+    width: 40%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+ }
+
+.wrapper > div{
+    order: 0;
+    flex: 1 1 auto;
+    width: 20%;
+    height: 33%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper > div img{    
+  -webkit-animation-iteration-count: infinite;    
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000;
+}
+@-webkit-keyframes zoom-w{
+  from{
+    width: 300%;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes zoom-w{
+  from{
+    width: 300%;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes zoom-h{
+  from{
+    height: 300%;
+    transform:   translate3d(-10em,0,0);
+  }
+  to{
+    height: 100%;
+    transform:   translate3d(0,0,0);
+  }
+}
+
+@keyframes zoom-h{
+  from{
+    height: 300%;
+    transform:   translate3d(-10em,0,0);
+  }
+  to{
+    height: 100%;
+    transform:   translate3d(0,0,0);
+  }
+}
+
+@-webkit-keyframes scroll-left-right {
+    to {transform:   translate3d(-10em,0,0);}
+}
+
+@keyframes scroll-left-right {
+    to {transform:   translate3d(-10em,0,0);}
+}
+@-webkit-keyframes scroll-dat-ass {
+    to {transform: translate3d(-1.2em,0,0);}
+}
+@keyframes scroll-dat-ass {
+    to {transform: translate3d(-1.2em,0,0);}
+}
+
+@-webkit-keyframes scroll-right-left {
+    from {transform: translate3d(-10em,0,0);}
+    to {transform: translate3d(0,0,0);}
+}
+
+@keyframes scroll-right-left {
+    from {transform: translate3d(-10em,0,0);}
+    to {transform: translate3d(0,0,0);}
+}
+
+.wrapper > div:first-child{
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 90% 100%, 0% 90%);
+          clip-path: polygon(0% 0%, 90% 0%, 90% 100%, 0% 90%);
+}
+
+.wrapper > div:first-child img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.wrapper > div:nth-child(2){
+  -webkit-clip-path: polygon(0% 0%, 90% 10%, 90% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 10%, 90% 90%, 0% 100%);
+  text-align: center;
+}
+
+.wrapper > div:nth-child(2) img{
+  -webkit-animation-name: zoom-h;
+          animation-name: zoom-h;
+  -webkit-animation-duration: 28s;
+          animation-duration: 28s;
+}
+
+.wrapper > div:nth-child(3){
+  -webkit-clip-path: polygon(0% 10%, 90% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 10%, 90% 0%, 90% 100%, 0% 100%);
+}
+
+.wrapper > div:nth-child(3) img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.wrapper > div:nth-child(4){
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 90% 96%, 0% 91%);
+          clip-path: polygon(0% 0%, 90% 0%, 90% 96%, 0% 91%);
+  flex: 0 1 auto;
+  height: 37%;
+}
+
+.wrapper > div:nth-child(4) img{
+  height: 100%;
+  -webkit-animation-name: scroll-right-left;
+          animation-name: scroll-right-left;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.wrapper > div:nth-child(5){
+  -webkit-clip-path: polygon(0% 0%, 90% 7%, 95% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 7%, 95% 90%, 0% 100%);
+  flex: 0 1 auto;
+  height: 25%; 
+}
+
+.wrapper > div:nth-child(5) img{
+  height: 130%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+
+}
+
+.wrapper > div:nth-child(6){
+  -webkit-clip-path: polygon(0% 10%, 95% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 10%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+.wrapper > div:nth-child(6) img{
+  height: 120%;
+  -webkit-animation-name: scroll-right-left;
+          animation-name: scroll-right-left;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+.wrapper > div:nth-child(7){
+  flex: 0 1 auto;
+  height: 39%;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 90% 100%, 0% 90%);
+          clip-path: polygon(0% 0%, 95% 0%, 90% 100%, 0% 90%);
+}
+
+.wrapper > div:nth-child(7) img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+.wrapper > div:nth-child(8){
+  -webkit-clip-path: polygon(0% 0%, 90% 5%, 100% 100%, 7% 100%);
+          clip-path: polygon(0% 0%, 90% 5%, 100% 100%, 7% 100%);
+  height: 61%;
+  flex: 0 1 auto;
+}
+
+.wrapper > div:nth-child(8) img{           position: relative;
+  -webkit-animation-name: zoom-h;
+          animation-name: zoom-h;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+
+.wrapper > div:nth-child(9){
+  -webkit-clip-path: polygon(3% 0%, 95% 0%, 90% 100%, 0% 90%);
+          clip-path: polygon(3% 0%, 95% 0%, 90% 100%, 0% 90%);
+}
+
+.wrapper > div:nth-child(9) img{
+  height: 110%;
+  -webkit-animation-name: scroll-right-left;
+          animation-name: scroll-right-left;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.wrapper > div:nth-child(10){
+  -webkit-clip-path: polygon(0% 0%, 90% 10%, 95% 100%, 5% 90%);
+          clip-path: polygon(0% 0%, 90% 10%, 95% 100%, 5% 90%);
+}
+
+.wrapper > div:nth-child(10) img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+.wrapper > div:nth-child(11){
+  -webkit-clip-path: polygon(5% 0%, 95% 10%, 100% 100%, 10% 100%);
+          clip-path: polygon(5% 0%, 95% 10%, 100% 100%, 10% 100%);
+}
+
+.wrapper > div:nth-child(11) img{
+  height: 100%;
+  -webkit-animation-name: scroll-right-left;
+          animation-name: scroll-right-left;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.wrapper > div:nth-child(12){
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.wrapper > div:nth-child(12) img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+
+.wrapper > div:nth-child(13){
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 5% 100%);
+          clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 5% 100%);
+}
+
+.wrapper > div:nth-child(13) img{
+  height: 100%;
+  -webkit-animation-name: scroll-right-left;
+          animation-name: scroll-right-left;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.wrapper > div:nth-child(14){
+  -webkit-clip-path: polygon(5% 10%, 100% 5%, 100% 100%, 10% 100%);
+          clip-path: polygon(5% 10%, 100% 5%, 100% 100%, 10% 100%);
+}
+
+.wrapper > div:nth-child(14) img{
+  height: 100%;
+  -webkit-animation-name: scroll-left-right;
+          animation-name: scroll-left-right;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+body, html{
+  height: 100%;
+}
