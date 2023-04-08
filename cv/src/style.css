@@ -1,0 +1,16 @@
+#btn-scroll-to-top {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .imageToHide {
+        display: none;
+    }
+}
+
+@media print {
+    .imageToHide {
+        display: block;
+    }
+}

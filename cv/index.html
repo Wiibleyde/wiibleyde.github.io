@@ -7,35 +7,13 @@
         <title>CV - Nathan Bonnell</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'primary': '#3490dc',
-                            'secondary': '#ffed4a',
-                            'danger': '#e3342f',
-                        },
-                    }
-                }
-            }
-        </script>
-        <style type="text/tailwindcss">
-
-        </style>
-        <style>
-            #btn-scroll-to-top {
-                opacity: 0;
-                transition: opacity 0.3s ease-in-out;
-            }
-        </style>
+        <link rel="stylesheet" href="src/style.css">
     </head>
     <body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white print:bg-white print:text-black print:font-sans print:mx-10">
         <header class="container mx-auto py-6 sm:flex sm:justify-between sm:mx-auto" id="toppest">
-            <h1 class="text-3xl font-bold sm:text-center sm:mx-auto print:p-5 print:bg-blue-500">Curriculum Vitae - Nathan Bonnell</h1>
-            <img class="rounded-full max-w-full w-[20rem] print:w-[10rem] print:absolute print:right-5 print:top-5 sm:hidden md:hidden lg:hidden xl:hidden" src="src/pp.jpg" alt="Nathan Bonnell">
+            <h1 class="text-3xl font-bold sm:text-center sm:mx-auto print:hidden">Curriculum Vitae - Nathan Bonnell</h1>
+            <h1 class="sm:hidden md:hidden lg:hidden xl:hidden print:py-5 print:bg-blue-500 print:text-left print:justify-start print:text-2xl">Curriculum Vitae - Nathan Bonnell</h1>
+            <img class="print:rounded-full sm:hidden md:hidden lg:hidden xl:hidden print:max-w-full print:w-[10rem] print:absolute print:right-5 print:top-5 imageToHide" src="src/pp.jpg" alt="Nathan Bonnell">
             <nav class="mt-4 right-0 sm:mt-0 print:hidden">
                 <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
                     <li>
@@ -44,14 +22,17 @@
                     <li>
                         <button onclick="scrollToDiv('me')" class="hover:text-gray-500"><i class="bi bi-person"></i> Moi</button>
                     </li>
-                    <li>
+                    <!-- <li>
                         <button onclick="scrollToDiv('experience')" class="hover:text-gray-500"><i class="bi bi-display"></i> Expérience</button>
-                    </li>
+                    </li> -->
                     <li>
-                        <button onclick="scrollToDiv('education')" class="hover:text-gray-500"><i class="bi bi-book"></i> Éducation</button>
+                        <button onclick="scrollToDiv('education')" class="hover:text-gray-500"><i class="bi bi-book"></i> Formation</button>
                     </li>
                     <li>
                         <button onclick="scrollToDiv('skills')" class="hover:text-gray-500"><i class="bi bi-lightbulb"></i> Compétences</button>
+                    </li>
+                    <li>
+                        <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i class="bi bi-printer"></i> Imprimer le CV</button>
                     </li>
                 </ul>
             </nav>
@@ -100,8 +81,8 @@
                     </div>
                     <div class="print:hidden">
                         <h3 class="text-xl font-bold">Liens complémentaires</h3>
-                        <a href="https://github.com/Wiibleyde" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> GitHub : Wiibleyde</a></p>
-                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
+                        <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> GitHub : Wiibleyde</a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
                     </div>
                 </div>
             </section>
@@ -155,42 +136,36 @@
                         <div class="ml-4">
                             <ul class="list-disc list-inside">
                                 <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
-                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de fichiers</li>
                                 <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
                                 <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
                                 <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de sauvegarde</li>
-                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de DHCP</li>
-                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un DHCP</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out" onclick="scrollToDiv('toppest')">
+        <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out print:hidden" onclick="scrollToDiv('toppest')">
             <i class="bi bi-arrow-up"></i>
         </button>
     </body>
     <footer class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
-        <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - Curriculum Vitae</p>
+        <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
     </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/script.js"></script>
     <script>
-        function scrollToDiv(id) {
-            document.getElementById(id).scrollIntoView({behavior: 'smooth'})
-        }
-
-        window.onscroll = function() {scrollFunction()};
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            var btnScrollToTop = document.getElementById("btn-scroll-to-top");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btnScrollToTop.classList.remove("hidden");
-                setTimeout(function(){ btnScrollToTop.style.opacity = "1"; }, 10);
-            } else {
-                btnScrollToTop.style.opacity = "0";
-                setTimeout(function(){ btnScrollToTop.classList.add("hidden"); }, 300);
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3490dc',
+                        'secondary': '#ffed4a',
+                        'danger': '#e3342f',
+                    },
+                }
             }
         }
     </script>
