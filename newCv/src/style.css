@@ -1,0 +1,41 @@
+#btn-scroll-to-top {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .imageToHide {
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    #notlittelestprint {
+        display: block !important;
+    }
+
+    .imageToHide {
+        display: block !important;
+    } 
+}
+
+
+
+/* max 640 but not print */
+@media (max-width: 640px) {
+    #littelest {
+        display: block;
+    }
+
+    #notlittelestprint {
+        display: none;
+    }
+
+    #notlittelest {
+        display: none;
+    }
+}
