@@ -11,11 +11,31 @@
 
 @media print {
     body {
-        -webkit-print-color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    #notlittelestprint {
+        display: block !important;
     }
 
     .imageToHide {
-        display: block;
-    }
+        display: block !important;
+    } 
 }
 
+
+
+/* max 640 but not print */
+@media (max-width: 640px) {
+    #littelest {
+        display: block;
+    }
+
+    #notlittelestprint {
+        display: none;
+    }
+
+    #notlittelest {
+        display: none;
+    }
+}
