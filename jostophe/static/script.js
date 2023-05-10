@@ -43,6 +43,12 @@ function translateJostophe(sourceId, resultId) {
     result.innerHTML = translatedText;
 }
 
+function copyText(textareaId) {
+    let textarea = document.getElementById(textareaId)
+    textarea.select()
+    document.execCommand('copy')
+}
+
 addEventListener('DOMContentLoaded', function() {
     let textarea = document.getElementById('source-text')
     textarea.addEventListener('keyup', function() {
