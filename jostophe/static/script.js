@@ -27,21 +27,11 @@ function translateJostophe(sourceId, resultId) {
     let textarea = document.getElementById(sourceId)
     let text = textarea.value
     let translatedText = text
-  
     for (let i = 0; i < regexs.length; i++) {
         let regex = regexs[i]
         translatedText = translatedText.replace(regex[Object.keys(regex)[0]], regex[Object.keys(regex)[1]])
     }
-  
-    result.innerHTML = translatedText;
-}
-  
-
-
-function copyText(textareaId) {
-    let textarea = document.getElementById(textareaId)
-    textarea.select()
-    document.execCommand('copy')
+    result.innerHTML = translatedText
 }
 
 addEventListener('DOMContentLoaded', function() {
@@ -49,4 +39,10 @@ addEventListener('DOMContentLoaded', function() {
     textarea.addEventListener('keyup', function() {
         translateJostophe('source-text','result-text')
     })
-});
+})
+
+// function copyText(textareaId) {
+//     let textarea = document.getElementById(textareaId)
+//     textarea.select()
+//     document.execCommand('copy')
+// }
