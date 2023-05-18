@@ -263,7 +263,7 @@ h1 div {
 }
 
 .wrapper > div:nth-child(5) img{
-    height: 130%;
+    height: 170%;
     -webkit-animation-name: scroll-left-right;
         animation-name: scroll-left-right;
     -webkit-animation-duration: 10s;
