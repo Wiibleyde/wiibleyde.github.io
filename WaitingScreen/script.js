@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 	loopAnimation()
 })
+
+const textParam = new URLSearchParams("text")
   
 function animation_text_1 (element){
 	var newText = ""
@@ -30,14 +32,18 @@ function unanimation_text_1 (element){
 	TweenMax.staggerFromTo(targetsDiv, 2, {opacity:1, y:0, ease: Elastic.easeOut.config(1.2, 0.5)}, {opacity:0, y:90, ease: Elastic.easeOut.config(1.2, 0.5)}, 0.03)
 }
 
-function loopAnimation(){
+function loopAnimation()	{
 	animation_text_1("#text-anim")
-	setTimeout(
-		function(){
-			unanimation_text_1("#text-anim")
-		}, 2000)
-	setTimeout(
-		function(){
-			loopAnimation()
-		}, 4000)
+	setTimeout(function(){unanimation_text_1("#text-anim")}, 2000)
+	setTimeout(function(){loopAnimation()}, 4000)
 }
+
+function getUrlParam(paramName) {
+	let params = new URLSearchParams(location.search)
+	return params.get(paramName)
+}
+
+text = getUrlParam("text")
+if (text) {
+	document.querySelector("#text-anim").innerText = text
+} 
