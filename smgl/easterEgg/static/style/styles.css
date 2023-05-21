@@ -1,4 +1,5 @@
-body, .website-counter {
+body,
+.website-counter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@ body {
 }
 
 .trouve {
-    color:white;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2vh;
 }
@@ -77,12 +78,20 @@ body {
     background-color: rgba(240, 235, 235, 0.7);
 }
 
-#messageDiv{
+#messageDiv {
     animation: messageDiv 3s infinite;
 }
 
-@keyframes messageDiv{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+@keyframes messageDiv {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

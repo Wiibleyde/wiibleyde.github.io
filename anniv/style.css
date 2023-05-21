@@ -8,7 +8,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -17,14 +18,14 @@ body {
   align-items: center;
   background-color: #004c63;
   display: flex;
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
     sans-serif;
 }
 
@@ -96,6 +97,7 @@ li span {
   width: 5px;
   height: 16.66666667px;
 }
+
 .velas:after,
 .velas:before {
   background: rgba(255, 0, 0, 0.4);
@@ -104,10 +106,12 @@ li span {
   width: 100%;
   height: 2.22222222px;
 }
+
 .velas:after {
   top: 25%;
   left: 0;
 }
+
 .velas:before {
   top: 45%;
   left: 0;
@@ -123,25 +127,30 @@ li span {
   width: 6.66666667px;
   height: 12.5px;
 }
+
 .fuego:nth-child(1) {
   -webkit-animation: fuego 2s infinite;
-          animation: fuego 2s infinite;
+  animation: fuego 2s infinite;
 }
+
 .fuego:nth-child(2) {
   -webkit-animation: fuego 1.5s infinite;
-          animation: fuego 1.5s infinite;
+  animation: fuego 1.5s infinite;
 }
+
 .fuego:nth-child(3) {
   -webkit-animation: fuego 1s infinite;
-          animation: fuego 1s infinite;
+  animation: fuego 1s infinite;
 }
+
 .fuego:nth-child(4) {
   -webkit-animation: fuego 0.5s infinite;
-          animation: fuego 0.5s infinite;
+  animation: fuego 0.5s infinite;
 }
+
 .fuego:nth-child(5) {
   -webkit-animation: fuego 0.2s infinite;
-          animation: fuego 0.2s infinite;
+  animation: fuego 0.2s infinite;
 }
 
 @-webkit-keyframes fuego {
@@ -149,24 +158,29 @@ li span {
     background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
   }
+
   50% {
     background: rgba(255, 50, 0, 0.1);
     transform: translateY(-20px) scale(0);
   }
+
   100% {
     background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
   }
 }
+
 @keyframes fuego {
   0% {
     background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
   }
+
   50% {
     background: rgba(255, 50, 0, 0.1);
     transform: translateY(-20px) scale(0);
   }
+
   100% {
     background: rgba(254, 248, 97, 0.5);
     transform: translateY(0) scale(1);
@@ -185,6 +199,7 @@ li span {
   height: 12.5px;
   z-index: 10;
 }
+
 .cobertura:after,
 .cobertura:before {
   background: #ece7e3;
@@ -194,10 +209,12 @@ li span {
   width: 5px;
   height: 10px;
 }
+
 .cobertura:after {
   top: 6.66666667px;
   right: 14.28571429px;
 }
+
 .cobertura:before {
   top: 10px;
   right: 9.09090909px;
@@ -212,6 +229,7 @@ li span {
   width: 50px;
   height: 33.33333333px;
 }
+
 .bizcocho:after,
 .bizcocho:before {
   background: rgba(236, 231, 227, 0.6);
@@ -220,10 +238,12 @@ li span {
   width: 100%;
   height: 5px;
 }
+
 .bizcocho:after {
   top: 30%;
   left: 0;
 }
+
 .bizcocho:before {
   top: 60%;
   left: 0;
@@ -233,11 +253,11 @@ li span {
   h1 {
     font-size: calc(1.5rem * var(--smaller));
   }
-  
+
   li {
     font-size: calc(1.125rem * var(--smaller));
   }
-  
+
   li span {
     font-size: calc(3.375rem * var(--smaller));
   }

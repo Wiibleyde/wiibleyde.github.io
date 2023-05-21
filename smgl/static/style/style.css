@@ -8,7 +8,8 @@
     font-family: 'Comfortaa', cursive;
 }
 
-html,body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -63,13 +64,13 @@ body footer a {
 }
 
 .form {
-  position: absolute;
-  right: 0%;
+    position: absolute;
+    right: 0%;
 
 }
 
 body footer a:hover {
-    background-color:white;
+    background-color: white;
     color: rgba(43, 31, 29, 1);
     transition: 0.3s ease-in-out;
 }
@@ -106,11 +107,19 @@ body footer a:hover {
     list-style: none;
 }
 
-.gl, .office, .nav, .doc, .ecoledirecte {
+.gl,
+.office,
+.nav,
+.doc,
+.ecoledirecte {
     position: relative;
 }
 
-.gl ul, .office ul, .nav ul, .doc ul, .ecoledirecte ul {
+.gl ul,
+.office ul,
+.nav ul,
+.doc ul,
+.ecoledirecte ul {
     margin-top: 10px;
     position: absolute;
     justify-content: space-around;
@@ -126,10 +135,14 @@ body footer a:hover {
     z-index: -10;
     transform: translateY(-10px);
     transition: all 0.4s ease;
-    top:-1000px;
+    top: -1000px;
 }
 
-.gl li, .office li, .nav li, .doc li, .ecoledirecte li {
+.gl li,
+.office li,
+.nav li,
+.doc li,
+.ecoledirecte li {
     width: 100%;
     height: 100%;
     display: flex;
@@ -146,16 +159,24 @@ body footer a:hover {
 }
 
 header {
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 100;
 }
 
-.gl li a:hover, .office li a:hover, .nav li a:hover, .doc li a:hover, .ecoledirecte li a:hover {
-    background-color:rgba(43, 31, 29, 0.6);
+.gl li a:hover,
+.office li a:hover,
+.nav li a:hover,
+.doc li a:hover,
+.ecoledirecte li a:hover {
+    background-color: rgba(43, 31, 29, 0.6);
     color: white;
 }
 
-.gl a, .office a, .nav a, .doc a, .ecoledirecte a {
+.gl a,
+.office a,
+.nav a,
+.doc a,
+.ecoledirecte a {
     color: black;
     text-decoration: none;
     display: block;
@@ -166,7 +187,9 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.dropdown button, .dropdown .gl button a, .dropdown .ecoledirecte a {
+.dropdown button,
+.dropdown .gl button a,
+.dropdown .ecoledirecte a {
     background: none;
     text-decoration: none;
     border: none;
@@ -175,21 +198,36 @@ header {
     cursor: pointer;
 }
 
-.gl button:focus + ul, .gl ul:hover, .office button:focus + ul, .office ul:hover, .nav button:focus + ul, .nav ul:hover, .doc button:focus + ul, .doc ul:hover, .ecoledirecte button:focus + ul, .ecoledirecte ul:hover {
+.gl button:focus+ul,
+.gl ul:hover,
+.office button:focus+ul,
+.office ul:hover,
+.nav button:focus+ul,
+.nav ul:hover,
+.doc button:focus+ul,
+.doc ul:hover,
+.ecoledirecte button:focus+ul,
+.ecoledirecte ul:hover {
     opacity: 1;
     pointer-events: all;
     display: flex;
     transform: translateY(0px);
     transform: translateX(-50%);
     z-index: 10;
-    top:auto;
+    top: auto;
 }
-.gl button a:hover, .office button:hover, .nav button:hover, .doc button:hover, .ecoledirecte button a:hover {
+
+.gl button a:hover,
+.office button:hover,
+.nav button:hover,
+.doc button:hover,
+.ecoledirecte button a:hover {
     background: white;
-    color:rgba(43, 31, 29, 0.9);
+    color: rgba(43, 31, 29, 0.9);
     border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
+
 .vid {
     position: absolute;
     top: 50%;
@@ -200,10 +238,15 @@ header {
     transform: translateY(-50%);
 }
 
-.dropdown .office button, .nav button, .doc button, .gl a, .ecoledirecte a{
+.dropdown .office button,
+.nav button,
+.doc button,
+.gl a,
+.ecoledirecte a {
     padding: 10px;
     transition: 0.3s ease-in-out;
 }
+
 .cour {
     visibility: hidden;
 }
@@ -248,27 +291,41 @@ header {
     font-size: 4vh;
 }
 
-#messageDiv{
+#messageDiv {
     animation: messageDiv 3s infinite;
 }
 
-@keyframes messageDiv{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+@keyframes messageDiv {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (orientation: portrait) {
     .vid {
         display: none;
     }
+
     .cour {
         visibility: visible;
         width: auto;
         height: 100%;
 
     }
-    .gl ul, .office ul, .nav ul, .doc ul, .ecoledirecte ul {
+
+    .gl ul,
+    .office ul,
+    .nav ul,
+    .doc ul,
+    .ecoledirecte ul {
         margin-top: 25vh;
         position: absolute;
         justify-content: space-around;
@@ -284,8 +341,9 @@ header {
         z-index: -10;
         transform: translateY(-10px);
         transition: all 0.4s ease;
-        top:-1000px;
+        top: -1000px;
     }
+
     .dropdown {
         width: auto;
         height: 100%;
@@ -295,18 +353,31 @@ header {
         align-items: center;
         background: radial-gradient(rgba(43, 31, 29, 0.6), rgba(43, 31, 29, 0.664));
     }
-    .gl li, .office li, .nav li, .doc li, .ecoledirecte li {
+
+    .gl li,
+    .office li,
+    .nav li,
+    .doc li,
+    .ecoledirecte li {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .gl, .office, .nav, .doc, .ecoledirecte {
+
+    .gl,
+    .office,
+    .nav,
+    .doc,
+    .ecoledirecte {
         padding: 8px;
         text-align: center;
     }
-    .dropdown button, .dropdown .gl button a, .dropdown .ecoledirecte a {
+
+    .dropdown button,
+    .dropdown .gl button a,
+    .dropdown .ecoledirecte a {
         background: none;
         text-decoration: none;
         border: none;
@@ -321,7 +392,11 @@ header {
         display: none;
     }
 
-    .gl a, .office a, .nav a, .doc a, .ecoledirecte a {
+    .gl a,
+    .office a,
+    .nav a,
+    .doc a,
+    .ecoledirecte a {
         color: black;
         text-decoration: none;
         display: block;
@@ -331,18 +406,30 @@ header {
         padding: 10px;
         font-size: 2vh;
     }
-    .gl button:focus + ul, .gl ul:hover, .office button:focus + ul, .office ul:hover, .nav button:focus + ul, .nav ul:hover, .doc button:focus + ul, .doc ul:hover, .ecoledirecte button:focus + ul, .ecoledirecte ul:hover {
+
+    .gl button:focus+ul,
+    .gl ul:hover,
+    .office button:focus+ul,
+    .office ul:hover,
+    .nav button:focus+ul,
+    .nav ul:hover,
+    .doc button:focus+ul,
+    .doc ul:hover,
+    .ecoledirecte button:focus+ul,
+    .ecoledirecte ul:hover {
         opacity: 1;
         pointer-events: all;
         display: flex;
         transform: translateY(0px);
         transform: translateX(-50%);
         z-index: 10;
-        top:auto;
+        top: auto;
     }
-    body footer a{
+
+    body footer a {
         font-size: 1.5vh;
     }
+
     .logo {
         position: absolute;
         left: 50%;
@@ -351,9 +438,14 @@ header {
         transform: translateX(-50%);
         z-index: 10;
     }
-    .gl button a:hover, .office button:hover, .nav button:hover, .doc button:hover, .ecoledirecte button a:hover {
+
+    .gl button a:hover,
+    .office button:hover,
+    .nav button:hover,
+    .doc button:hover,
+    .ecoledirecte button a:hover {
         background: white;
-        color:rgba(43, 31, 29, 0.9);
+        color: rgba(43, 31, 29, 0.9);
         border-radius: 5px;
         transition: 0.3s ease-in-out;
     }
@@ -378,23 +470,23 @@ header {
         font-weight: bolder;
         text-align: center;
         background-color: rgba(240, 235, 235, 0.7);
-        position:absolute;
-        top:45%;
+        position: absolute;
+        top: 45%;
         left: 20%;
     }
-    
+
     .urgent {
         font-size: 5vh;
     }
-    
+
     .urgent-text-ter {
         font-size: 3vh;
     }
-    
+
     .urgent-link {
         color: red;
     }
-    
+
     .urgent-text {
         font-size: 2vh;
     }

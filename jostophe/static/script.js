@@ -20,7 +20,7 @@ const regexs = [
     { finalSionRegex: /sion\b(?!\s+(?:NS)\b)/gi, finalSionReplace: "tion" },
     { finalTionRegex: /tion\b(?!\s+(?:rien)\b)/gi, finalTionReplace: "sion" },
 ]
-  
+
 function translateJostophe(sourceId, resultId) {
     let result = document.getElementById(resultId)
     result.innerHTML = "Processing..."
@@ -34,10 +34,10 @@ function translateJostophe(sourceId, resultId) {
     result.innerHTML = translatedText
 }
 
-addEventListener('DOMContentLoaded', function() {
+addEventListener('DOMContentLoaded', function () {
     let textarea = document.getElementById('source-text')
-    textarea.addEventListener('keyup', function() {
-        translateJostophe('source-text','result-text')
+    textarea.addEventListener('keyup', function () {
+        translateJostophe('source-text', 'result-text')
     })
 })
 

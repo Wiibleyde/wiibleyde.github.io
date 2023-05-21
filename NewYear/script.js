@@ -1,4 +1,4 @@
-(function() {
+(function () {
     const second = 1000,
         minute = second * 60,
         hour = minute * 60,
@@ -12,15 +12,15 @@
         birthday = dayMonth + yyyy;
     today = mm + "/" + dd + "/" + yyyy;
     if (today > birthday) {
-      birthday = dayMonth + nextYear;
+        birthday = dayMonth + nextYear;
     }
     const countDown = new Date(birthday).getTime(),
-        x = setInterval(function() {
+        x = setInterval(function () {
             const now = new Date().getTime(),
                 distance = countDown - now;
             document.getElementById("days").innerText = Math.floor(distance / (day)), document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)), document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (
                 minute)), document.getElementById("seconds").innerText = Math.floor((distance % (minute)) /
-                second);
+                    second);
             if (distance < 0) {
                 document.getElementById("headline").innerText = "BONNE ANNÉE !";
                 document.getElementById("countdown").style.display = "none";
@@ -33,13 +33,13 @@
         }, 0)
 }());
 
-$(function() {
+$(function () {
     var canvas = $('#canvas')[0];
     canvas.width = $(window).width();
     canvas.height = $(window).height();
     var ctx = canvas.getContext('2d');
     // resize
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         canvas.width = $(window).width();
         canvas.height = $(window).height();
         ctx.fillStyle = '#000';

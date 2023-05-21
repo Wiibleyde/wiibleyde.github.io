@@ -1,644 +1,804 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>CV - Nathan Bonnell</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="src/style.css">
-    </head>
-    <body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
+    <title>CV - Nathan Bonnell</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
 
 
-        <div class="sm:block md:hidden lg:hidden xl:hidden print:hidden">
-            <header class="container mx-auto py-6 px-8 items-center" id="toppest">
-                <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
-                <nav class="mt-4 right-0">
-                    <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
-                        <li>
-                            <button onclick="scrollToDiv('contactSM')" class="hover:text-gray-500"><i class="bi bi-phone"></i> Contact</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('meSM')" class="hover:text-gray-500"><i class="bi bi-person"></i> Moi</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('educationSM')" class="hover:text-gray-500"><i class="bi bi-book"></i> Formation</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('skillsSM')" class="hover:text-gray-500"><i class="bi bi-lightbulb"></i> Compétences</button>
-                        </li>
-                        <li>
-                            <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i class="bi bi-printer"></i> Imprimer le CV</button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="container mx-0 px-8">
-                <div class="flex z-[100] justify-center items-center mt-8">
-                    <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+    <div class="sm:block md:hidden lg:hidden xl:hidden print:hidden">
+        <header class="container mx-auto py-6 px-8 items-center" id="toppest">
+            <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
+            <nav class="mt-4 right-0">
+                <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
+                    <li>
+                        <button onclick="scrollToDiv('contactSM')" class="hover:text-gray-500"><i
+                                class="bi bi-phone"></i> Contact</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('meSM')" class="hover:text-gray-500"><i class="bi bi-person"></i>
+                            Moi</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('educationSM')" class="hover:text-gray-500"><i
+                                class="bi bi-book"></i> Formation</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('skillsSM')" class="hover:text-gray-500"><i
+                                class="bi bi-lightbulb"></i> Compétences</button>
+                    </li>
+                    <li>
+                        <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i
+                                class="bi bi-printer"></i> Imprimer le CV</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container mx-0 px-8">
+            <div class="flex z-[100] justify-center items-center mt-8">
+                <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+            </div>
+            <section class="py-6">
+                <h2 id="contactSM" class="text-2xl font-bold">Contact</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Informations</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171
+                                    avenue du Truc, 33700 Mérignac
+                            </a>
+                        </p>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="tel:+33647805944"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="mailto:nathan@bonnell.fr"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Liens complémentaires</h3>
+                        <a href="https://github.com/Wiibleyde" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github :
+                                Wiibleyde
+                        </a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn :
+                                Nathan Bonnell
+                        </a></p>
+                    </div>
                 </div>
-                <section class="py-6">
-                    <h2 id="contactSM" class="text-2xl font-bold">Contact</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Informations</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171 avenue du Truc, 33700 Mérignac</a></p>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="tel:+33647805944" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="mailto:nathan@bonnell.fr" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Liens complémentaires</h3>
-                            <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github : Wiibleyde</a></p>
-                            <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6 grid grid-cols-1 gap-8">
-                    <div class="flex flex-col justify-center">
-                        <h2 id="meSM" class="text-2xl font-bold">Nathan Bonnell</h2>
-                        <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles technologies</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à Bordeaux</p>
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <h3 class="text-xl font-bold">Savoir être</h3>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
-                    </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="educationSM" class="text-2xl font-bold">Formation</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Langues</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Ynov Informatique</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="skillsSM" class="text-2xl font-bold">Compétences</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Développement</h3>
-                            <div class="flex flex-col justify-center">
-                                <div>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
-                                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent" class="mt-2 text-gray-600 dark:text-gray-400"></img>
-                                    <ul class="list-disc list-inside">Connaissance de :
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java, SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio, DaVinci Resolve, Suite Office</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Réseau</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques</p>
-                            <div class="ml-4">
-                                <ul class="list-disc list-inside">
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out" onclick="scrollToDiv('toppest')">
-                <i class="bi bi-arrow-up"></i>
-            </button>
-        </div>
-
-
-        <div class="sm:hidden md:block lg:hidden xl:hidden print:hidden" id="notlittelest">
-            <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
-                <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
-                <nav class="mt-4 right-0">
-                    <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
-                        <li>
-                            <button onclick="scrollToDiv('contactMD')" class="hover:text-gray-500"><i class="bi bi-phone"></i> Contact</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('meMD')" class="hover:text-gray-500"><i class="bi bi-person"></i> Moi</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('educationMD')" class="hover:text-gray-500"><i class="bi bi-book"></i> Formation</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('skillsMD')" class="hover:text-gray-500"><i class="bi bi-lightbulb"></i> Compétences</button>
-                        </li>
-                        <li>
-                            <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i class="bi bi-printer"></i> Imprimer le CV</button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="container mx-0 px-8">
-                <div class="flex z-[100] justify-center items-center mt-8">
-                    <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+            </section>
+            <section class="py-6 grid grid-cols-1 gap-8">
+                <div class="flex flex-col justify-center">
+                    <h2 id="meSM" class="text-2xl font-bold">Nathan Bonnell</h2>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles
+                        technologies</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à
+                        Bordeaux</p>
                 </div>
-                <section class="py-6">
-                    <h2 id="contactMD" class="text-2xl font-bold">Contact</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Informations</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171 avenue du Truc, 33700 Mérignac</a></p>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="tel:+33647805944" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="mailto:nathan@bonnell.fr" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Liens complémentaires</h3>
-                            <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github : Wiibleyde</a></p>
-                            <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6 grid grid-cols-1 gap-8">
-                    <div class="flex flex-col justify-center">
-                        <h2 id="meMD" class="text-2xl font-bold">Nathan Bonnell</h2>
-                        <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles technologies</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à Bordeaux</p>
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <h3 class="text-xl font-bold">Savoir être</h3>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
-                        <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
-                    </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="educationMD" class="text-2xl font-bold">Formation</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Langues</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Ynov Informatique</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="skillsMD" class="text-2xl font-bold">Compétences</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Développement</h3>
-                            <div class="flex flex-col justify-center">
-                                <div>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
-                                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent" class="mt-2 text-gray-600 dark:text-gray-400"></img>
-                                    <ul class="list-disc list-inside">Connaissance de :
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java, SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio, DaVinci Resolve, Suite Office</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Réseau</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques</p>
-                            <div class="ml-4">
-                                <ul class="list-disc list-inside">
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out" onclick="scrollToDiv('toppest')">
-                <i class="bi bi-arrow-up"></i>
-            </button>
-        </div>
-
-
-        <div class="sm:hidden md:hidden lg:block xl:hidden print:hidden" id="notlittelest">
-            <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
-                <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
-                <nav class="mt-4 right-0">
-                    <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
-                        <li>
-                            <button onclick="scrollToDiv('contactLG')" class="hover:text-gray-500"><i class="bi bi-phone"></i> Contact</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('meLG')" class="hover:text-gray-500"><i class="bi bi-person"></i> Moi</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('educationLG')" class="hover:text-gray-500"><i class="bi bi-book"></i> Formation</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('skillsLG')" class="hover:text-gray-500"><i class="bi bi-lightbulb"></i> Compétences</button>
-                        </li>
-                        <li>
-                            <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i class="bi bi-printer"></i> Imprimer le CV</button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="container mx-0 px-8">
-                <div class="flex z-[100] justify-center items-center mt-8">
-                    <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Savoir être</h3>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
                 </div>
-                <section class="py-6">
-                    <h2 id="contactLG" class="text-2xl font-bold">Contact</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Informations</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171 avenue du Truc, 33700 Mérignac</a></p>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="tel:+33647805944" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="mailto:nathan@bonnell.fr" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Liens complémentaires</h3>
-                            <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github : Wiibleyde</a></p>
-                            <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6 grid grid-cols-1 gap-8">
-                    <div class="col-span-1">
-                        <h2 id="meLG" class="text-2xl font-bold">Nathan Bonnell</h2>
-                        <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles technologies</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à Bordeaux</p>
+            </section>
+            <section class="py-6">
+                <h2 id="educationSM" class="text-2xl font-bold">Formation</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
                     </div>
                     <div>
                         <h3 class="text-xl font-bold">Langues</h3>
                         <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
                         <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
                     </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="educationLG" class="text-2xl font-bold">Formation</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Ynov Informatique</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
-                        </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Ynov Informatique</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
                     </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="skillsLG" class="text-2xl font-bold">Compétences</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Développement</h3>
-                            <div class="flex flex-col justify-center">
-                                <div>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
-                                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent" class="mt-2 text-gray-600 dark:text-gray-400"></img>
-                                    <ul class="list-disc list-inside">Connaissance de :
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java, SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio, DaVinci Resolve, Suite Office</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Réseau</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques</p>
-                            <div class="ml-4">
-                                <ul class="list-disc list-inside">
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="skillsSM" class="text-2xl font-bold">Compétences</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Développement</h3>
+                        <div class="flex flex-col justify-center">
+                            <div>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent"
+                                    class="mt-2 text-gray-600 dark:text-gray-400"></img>
+                                <ul class="list-disc list-inside">Connaissance de :
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java,
+                                        SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio,
+                                        DaVinci Resolve, Suite Office</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </section>
-            </main>
-            <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out" onclick="scrollToDiv('toppest')">
-                <i class="bi bi-arrow-up"></i>
-            </button>
-        </div>
-
-
-        <div class="sm:hidden md:hidden lg:hidden xl:block print:hidden" id="notlittelest">
-            <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
-                <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
-                <nav class="mt-4 right-0">
-                    <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
-                        <li>
-                            <button onclick="scrollToDiv('contactXL')" class="hover:text-gray-500"><i class="bi bi-phone"></i> Contact</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('meXL')" class="hover:text-gray-500"><i class="bi bi-person"></i> Moi</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('educationXL')" class="hover:text-gray-500"><i class="bi bi-book"></i> Formation</button>
-                        </li>
-                        <li>
-                            <button onclick="scrollToDiv('skillsXL')" class="hover:text-gray-500"><i class="bi bi-lightbulb"></i> Compétences</button>
-                        </li>
-                        <li>
-                            <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i class="bi bi-printer"></i> Imprimer le CV</button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="container mx-0 px-8">
-                <div class="flex justify-end z-[100] absolute right-12">
-                    <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+                    <div>
+                        <h3 class="text-xl font-bold">Réseau</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques
+                        </p>
+                        <div class="ml-4">
+                            <ul class="list-disc list-inside">
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <section class="py-6">
-                    <h2 id="contactXL" class="text-2xl font-bold">Contact</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Informations</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171 avenue du Truc, 33700 Mérignac</a></p>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="tel:+33647805944" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
-                            </p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">
-                                <a href="mailto:nathan@bonnell.fr" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Liens complémentaires</h3>
-                            <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github : Wiibleyde</a></p>
-                            <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
+            </section>
+        </main>
+        <button id="btn-scroll-to-top"
+            class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out"
+            onclick="scrollToDiv('toppest')">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <div class="sm:hidden md:block lg:hidden xl:hidden print:hidden" id="notlittelest">
+        <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
+            <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
+            <nav class="mt-4 right-0">
+                <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
+                    <li>
+                        <button onclick="scrollToDiv('contactMD')" class="hover:text-gray-500"><i
+                                class="bi bi-phone"></i> Contact</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('meMD')" class="hover:text-gray-500"><i class="bi bi-person"></i>
+                            Moi</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('educationMD')" class="hover:text-gray-500"><i
+                                class="bi bi-book"></i> Formation</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('skillsMD')" class="hover:text-gray-500"><i
+                                class="bi bi-lightbulb"></i> Compétences</button>
+                    </li>
+                    <li>
+                        <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i
+                                class="bi bi-printer"></i> Imprimer le CV</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container mx-0 px-8">
+            <div class="flex z-[100] justify-center items-center mt-8">
+                <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+            </div>
+            <section class="py-6">
+                <h2 id="contactMD" class="text-2xl font-bold">Contact</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Informations</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171
+                                    avenue du Truc, 33700 Mérignac
+                            </a>
+                        </p>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="tel:+33647805944"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="mailto:nathan@bonnell.fr"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Liens complémentaires</h3>
+                        <a href="https://github.com/Wiibleyde" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github :
+                                Wiibleyde
+                        </a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn :
+                                Nathan Bonnell
+                        </a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6 grid grid-cols-1 gap-8">
+                <div class="flex flex-col justify-center">
+                    <h2 id="meMD" class="text-2xl font-bold">Nathan Bonnell</h2>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles
+                        technologies</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à
+                        Bordeaux</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Savoir être</h3>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="educationMD" class="text-2xl font-bold">Formation</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Langues</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Ynov Informatique</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="skillsMD" class="text-2xl font-bold">Compétences</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Développement</h3>
+                        <div class="flex flex-col justify-center">
+                            <div>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent"
+                                    class="mt-2 text-gray-600 dark:text-gray-400"></img>
+                                <ul class="list-disc list-inside">Connaissance de :
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java,
+                                        SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio,
+                                        DaVinci Resolve, Suite Office</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </section>
-                <section class="py-6 grid grid-cols-2 gap-8">
-                    <div class="flex flex-col justify-center">
-                        <h2 id="meXL" class="text-2xl font-bold">Nathan Bonnell</h2>
-                        <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles technologies</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à Bordeaux</p>
+                    <div>
+                        <h3 class="text-xl font-bold">Réseau</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques
+                        </p>
+                        <div class="ml-4">
+                            <ul class="list-disc list-inside">
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-center">
+                </div>
+            </section>
+        </main>
+        <button id="btn-scroll-to-top"
+            class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out"
+            onclick="scrollToDiv('toppest')">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <div class="sm:hidden md:hidden lg:block xl:hidden print:hidden" id="notlittelest">
+        <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
+            <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
+            <nav class="mt-4 right-0">
+                <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
+                    <li>
+                        <button onclick="scrollToDiv('contactLG')" class="hover:text-gray-500"><i
+                                class="bi bi-phone"></i> Contact</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('meLG')" class="hover:text-gray-500"><i class="bi bi-person"></i>
+                            Moi</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('educationLG')" class="hover:text-gray-500"><i
+                                class="bi bi-book"></i> Formation</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('skillsLG')" class="hover:text-gray-500"><i
+                                class="bi bi-lightbulb"></i> Compétences</button>
+                    </li>
+                    <li>
+                        <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i
+                                class="bi bi-printer"></i> Imprimer le CV</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container mx-0 px-8">
+            <div class="flex z-[100] justify-center items-center mt-8">
+                <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+            </div>
+            <section class="py-6">
+                <h2 id="contactLG" class="text-2xl font-bold">Contact</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Informations</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171
+                                    avenue du Truc, 33700 Mérignac
+                            </a>
+                        </p>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="tel:+33647805944"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="mailto:nathan@bonnell.fr"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Liens complémentaires</h3>
+                        <a href="https://github.com/Wiibleyde" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github :
+                                Wiibleyde
+                        </a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn :
+                                Nathan Bonnell
+                        </a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6 grid grid-cols-1 gap-8">
+                <div class="col-span-1">
+                    <h2 id="meLG" class="text-2xl font-bold">Nathan Bonnell</h2>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles
+                        technologies</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à
+                        Bordeaux</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Langues</h3>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="educationLG" class="text-2xl font-bold">Formation</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Ynov Informatique</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="skillsLG" class="text-2xl font-bold">Compétences</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Développement</h3>
+                        <div class="flex flex-col justify-center">
+                            <div>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent"
+                                    class="mt-2 text-gray-600 dark:text-gray-400"></img>
+                                <ul class="list-disc list-inside">Connaissance de :
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java,
+                                        SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio,
+                                        DaVinci Resolve, Suite Office</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Réseau</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques
+                        </p>
+                        <div class="ml-4">
+                            <ul class="list-disc list-inside">
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <button id="btn-scroll-to-top"
+            class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out"
+            onclick="scrollToDiv('toppest')">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <div class="sm:hidden md:hidden lg:hidden xl:block print:hidden" id="notlittelest">
+        <header class="container mx-auto py-6 px-8 flex justify-between items-center" id="toppest">
+            <h1 class="text-3xl font-bold" id="titre">Curriculum Vitae - Nathan Bonnell</h1>
+            <nav class="mt-4 right-0">
+                <ul class="flex flex-col sm:flex-row sm:space-x-4 bg-gray-200 dark:bg-gray-700 rounded-lg p-2">
+                    <li>
+                        <button onclick="scrollToDiv('contactXL')" class="hover:text-gray-500"><i
+                                class="bi bi-phone"></i> Contact</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('meXL')" class="hover:text-gray-500"><i class="bi bi-person"></i>
+                            Moi</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('educationXL')" class="hover:text-gray-500"><i
+                                class="bi bi-book"></i> Formation</button>
+                    </li>
+                    <li>
+                        <button onclick="scrollToDiv('skillsXL')" class="hover:text-gray-500"><i
+                                class="bi bi-lightbulb"></i> Compétences</button>
+                    </li>
+                    <li>
+                        <button class="hover:text-gray-500 bg-gray-400 rounded-md px-2" onclick="window.print()"><i
+                                class="bi bi-printer"></i> Imprimer le CV</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container mx-0 px-8">
+            <div class="flex justify-end z-[100] absolute right-12">
+                <img class="rounded-full max-w-full w-[20rem]" src="src/pp.jpg" alt="Nathan Bonnell">
+            </div>
+            <section class="py-6">
+                <h2 id="contactXL" class="text-2xl font-bold">Contact</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Informations</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171
+                                    avenue du Truc, 33700 Mérignac
+                            </a>
+                        </p>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="tel:+33647805944"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            <a href="mailto:nathan@bonnell.fr"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><i
+                                    class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Liens complémentaires</h3>
+                        <a href="https://github.com/Wiibleyde" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github :
+                                Wiibleyde
+                        </a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
+                            <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn :
+                                Nathan Bonnell
+                        </a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6 grid grid-cols-2 gap-8">
+                <div class="flex flex-col justify-center">
+                    <h2 id="meXL" class="text-2xl font-bold">Nathan Bonnell</h2>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm">18 ans - Étudiant en informatique</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Développeur en formation</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Passionné par l'informatique et les nouvelles
+                        technologies</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Actuellement étudiant à Ynov Informatique à
+                        Bordeaux</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Savoir être</h3>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
+                    <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="educationXL" class="text-2xl font-bold" id="education">Formation</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Langues</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Ynov Informatique</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux
+                        </p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6">
+                <h2 id="skillsXL" class="text-2xl font-bold">Compétences</h2>
+                <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Développement</h3>
+                        <div class="flex flex-col justify-center">
+                            <div>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent"
+                                    class="mt-2 text-gray-600 dark:text-gray-400"></img>
+                                <ul class="list-disc list-inside">Connaissance de :
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java,
+                                        SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio,
+                                        DaVinci Resolve, Suite Office</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Réseau</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques
+                        </p>
+                        <div class="ml-4">
+                            <ul class="list-disc list-inside">
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <button id="btn-scroll-to-top"
+            class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out"
+            onclick="scrollToDiv('toppest')">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <div class="sm:hidden md:hidden lg:hidden xl:hidden print:block" id="notlittelestprint">
+        <header
+            class="container mx-auto py-6 sm:flex sm:justify-between sm:mx-auto print:bg-[#4a9ec2] print:pl-12 print:pr-12 print:py-7 print:rounded-md print:shadow-md"
+            id="toppest">
+            <h1
+                class="sm:hidden md:hidden lg:hidden xl:hidden print:py-5 print:text-left print:justify-start print:text-2xl print:text-white">
+                Curriculum Vitae - <p class="font-bold">Nathan Bonnell</p>
+            </h1>
+            <img class="print:rounded-full print:max-w-full print:w-[9.92rem] print:absolute print:right-[5.6%] print:top-0 imageToHide"
+                src="src/pp.jpg" alt="Nathan Bonnell">
+        </header>
+        <main class="container mx-0 sm:mx-16 print:mx-0 print:px-0 print:mt-5">
+            <section class="sm:hidden md:hidden lg:hidden xl:hidden print:py-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
+                    <div>
+                        <h3 class="text-xl font-bold">Ynov Informatique</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Bachelor 1 à Bordeaux</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">2022 - 2027</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center print:bg-[#94b5c4] print:p-5 print:rounded-t-md print:shadow-md">
+                        <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">18 ans - Étudiant en
+                            informatique</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">Développeur en formation</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">Passionné par l'informatique
+                            et les nouvelles technologies</p>
+                    </div>
+                </div>
+            </section>
+            <section class="print:py-0 print:mt-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 -mt-6 print:grid-cols-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Développement</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 print:mt-1">
+                            <div class="ml-2 print:ml-0">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent"
+                                    class="mt-2 text-gray-600 dark:text-gray-400"></img>
+                            </div>
+                            <div class="ml-2 print:ml-0">
+                                <ul class="list-disc list-inside">Connaissance de :
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java,
+                                        SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
+                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio,
+                                        DaVinci Resolve, Suite Office</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center print:bg-[#94b5c4] print:px-5 print:rounded-b-md print:shadow-md print:mb-2">
+                        <h2 id="contact" class="text-2xl font-bold">Contact</h2>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">
+                            <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black">
+                                <p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171
+                                    avenue du Truc, 33700 Mérignac
+                            </a>
+                        </p>
+                        </p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">
+                            <a href="tel:+33647805944"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><i
+                                    class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
+                        </p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">
+                            <a href="mailto:nathan@bonnell.fr"
+                                class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><i
+                                    class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
+                        </p>
+                        <a href="https://github.com/Wiibleyde" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black">
+                            <p class="mt-1 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github :
+                                Wiibleyde
+                        </a></p>
+                        <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank"
+                            class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black">
+                            <p class="mt-1 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn :
+                                Nathan Bonnell
+                        </a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-6 print:py-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
+                    <div>
+                        <h3 class="text-xl font-bold">Réseaux</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques
+                        </p>
+                        <div class="ml-4">
+                            <ul class="list-disc list-inside">
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur web</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur de stockage et/ou backups</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Reverse proxy</li>
+                                <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur de jeux</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center print:bg-[#bcd7e4] print:px-5 print:rounded-md print:shadow-md print:py-5 print:mb-5">
                         <h3 class="text-xl font-bold">Savoir être</h3>
                         <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
                         <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
                         <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
                     </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="educationXL" class="text-2xl font-bold" id="education">Formation</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2008 - 2022</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Langues</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Ynov Informatique</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Première année à Ynov Informatique à Bordeaux</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">2022 - 2027</p>
-                        </div>
+                </div>
+            </section>
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
+                    <div>
+                        <h2 id="education" class="text-2xl font-bold">Scolarité</h2>
+                        <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Bordeaux</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">2008 - 2022</p>
                     </div>
-                </section>
-                <section class="py-6">
-                    <h2 id="skillsXL" class="text-2xl font-bold">Compétences</h2>
-                    <div class="grid grid-cols-1 gap-8 mt-6 sm:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Développement</h3>
-                            <div class="flex flex-col justify-center">
-                                <div>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
-                                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent" class="mt-2 text-gray-600 dark:text-gray-400"></img>
-                                    <ul class="list-disc list-inside">Connaissance de :
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java, SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio, DaVinci Resolve, Suite Office</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Réseau</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques</p>
-                            <div class="ml-4">
-                                <ul class="list-disc list-inside">
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur web</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de stockage</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de backups</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un proxy</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Un serveur de jeux</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div
+                        class="flex flex-col justify-center print:bg-[#c4d6df] print:px-5 print:rounded-md print:shadow-md print:py-5 print:mb-5">
+                        <h3 class="text-xl font-bold">Langues</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
+                        <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
                     </div>
-                </section>
-            </main>
-            <button id="btn-scroll-to-top" class="hidden fixed bottom-10 right-10 p-4 bg-gray-500 text-white rounded-full shadow-lg hover:bg-gray-600 transition-opacity duration-500 ease-in-out" onclick="scrollToDiv('toppest')">
-                <i class="bi bi-arrow-up"></i>
-            </button>
+            </section>
+        </main>
+    </div>
+</body>
+<footer>
+    <div class="sm:block md:hidden lg:hidden xl:hidden print:hidden" id="notlittelest">
+        <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
+            <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
         </div>
+    </div>
+    <div class="sm:hidden md:block lg:hidden xl:hidden print:hidden" id="notlittelest">
+        <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
+            <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
+        </div>
+    </div>
+    <div class="sm:hidden md:hidden lg:block xl:hidden print:hidden" id="notlittelest">
+        <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
+            <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
+        </div>
+    </div>
+    <div class="sm:hidden md:hidden lg:hidden xl:block print:hidden">
+        <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
+            <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
+        </div>
+    </div>
+    <div class="sm:hidden md:hidden lg:hidden xl:hidden print:block" id="notlittelest">
 
-
-        <div class="sm:hidden md:hidden lg:hidden xl:hidden print:block" id="notlittelestprint">
-            <header class="container mx-auto py-6 sm:flex sm:justify-between sm:mx-auto print:bg-[#4a9ec2] print:pl-12 print:pr-12 print:py-7 print:rounded-md print:shadow-md" id="toppest">
-                <h1 class="sm:hidden md:hidden lg:hidden xl:hidden print:py-5 print:text-left print:justify-start print:text-2xl print:text-white">Curriculum Vitae - <p class="font-bold">Nathan Bonnell</p></h1>
-                <img class="print:rounded-full print:max-w-full print:w-[9.92rem] print:absolute print:right-[5.6%] print:top-0 imageToHide" src="src/pp.jpg" alt="Nathan Bonnell">
-            </header>
-            <main class="container mx-0 sm:mx-16 print:mx-0 print:px-0 print:mt-5">
-                <section class="sm:hidden md:hidden lg:hidden xl:hidden print:py-0">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
-                        <div>
-                            <h3 class="text-xl font-bold">Ynov Informatique</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Bachelor 1 à Bordeaux</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Visé Bac+5</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">2022 - 2027</p>
-                        </div>
-                        <div class="flex flex-col justify-center print:bg-[#94b5c4] print:p-5 print:rounded-t-md print:shadow-md">
-                            <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">18 ans - Étudiant en informatique</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">Développeur en formation</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400 print:text-black">Passionné par l'informatique et les nouvelles technologies</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="print:py-0 print:mt-0">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 -mt-6 print:grid-cols-2">
-                        <div>
-                            <h3 class="text-xl font-bold">Développement</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 print:mt-1">
-                                <div class="ml-2 print:ml-0">
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Langages utilisés :</p>
-                                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=transparent" class="mt-2 text-gray-600 dark:text-gray-400"></img>
-                                </div>
-                                <div class="ml-2 print:ml-0">
-                                    <ul class="list-disc list-inside">Connaissance de :
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Visual Studio Code, Git, Java, SQLite, C++ (QT), scripting (Bash, LUA), Tailwind, Bootstrap</p>
-                                        <li class="mt-1 text-gray-600 dark:text-gray-400">Windows, Linux, OBS Studio, DaVinci Resolve, Suite Office</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-center print:bg-[#94b5c4] print:px-5 print:rounded-b-md print:shadow-md print:mb-2">
-                            <h2 id="contact" class="text-2xl font-bold">Contact</h2>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">
-                                <a href="https://goo.gl/maps/CyikdJzYMEFFU49NA" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><p class="mt-2 text-gray-600 dark:text-gray-400"><i class="bi bi-geo-alt"></i> : 171 avenue du Truc, 33700 Mérignac</a></p>
-                            </p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">
-                                <a href="tel:+33647805944" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><i class="bi bi-telephone"></i> : +33 6 47 80 59 44</a>
-                            </p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">
-                                <a href="mailto:nathan@bonnell.fr" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><i class="bi bi-mailbox"></i> : nathan@bonnell.fr</a>
-                            </p>
-                            <a href="https://github.com/Wiibleyde" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><p class="mt-1 text-gray-600 dark:text-gray-400"><i class="bi bi-github"></i> Github : Wiibleyde</a></p>
-                            <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a/" target="_blank" class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 print:text-black"><p class="mt-1 text-gray-600 dark:text-gray-400"><i class="bi bi-linkedin"></i> LinkedIn : Nathan Bonnell</a></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-6 print:py-0">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
-                        <div>
-                            <h3 class="text-xl font-bold">Réseaux</h3>
-                            <p class="mt-2 text-gray-600 dark:text-gray-400">Mise en place de services et sécurité basiques</p>
-                            <div class="ml-4">
-                                <ul class="list-disc list-inside">
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur web</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur de stockage et/ou backups</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Reverse proxy</li>
-                                    <li class="mt-1 text-gray-600 dark:text-gray-400">Serveur de jeux</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-center print:bg-[#bcd7e4] print:px-5 print:rounded-md print:shadow-md print:py-5 print:mb-5">
-                            <h3 class="text-xl font-bold">Savoir être</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Respecter des engagements</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Curiosité</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Travail d'équipe</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 print:grid-cols-2 print:mt-1">
-                        <div>    
-                            <h2 id="education" class="text-2xl font-bold">Scolarité</h2>
-                            <h3 class="text-xl font-bold">Sainte Marie Grand Lebrun</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Baccalauréat général</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Spécialité : NSI | HGGSP</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Bordeaux</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">2008 - 2022</p>
-                        </div>
-                        <div class="flex flex-col justify-center print:bg-[#c4d6df] print:px-5 print:rounded-md print:shadow-md print:py-5 print:mb-5">
-                            <h3 class="text-xl font-bold">Langues</h3>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Anglais : TOEIC niveau B1</p>
-                            <p class="mt-1 text-gray-600 dark:text-gray-400">Espagnol : Niveau scolaire</p>
-                        </div>
-                </section>
-            </main>
-        </div>
-    </body>
-    <footer>
-        <div class="sm:block md:hidden lg:hidden xl:hidden print:hidden" id="notlittelest">
-            <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
-                <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
-            </div>
-        </div>
-        <div class="sm:hidden md:block lg:hidden xl:hidden print:hidden" id="notlittelest">
-            <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
-                <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
-            </div>
-        </div>
-        <div class="sm:hidden md:hidden lg:block xl:hidden print:hidden" id="notlittelest">
-            <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
-                <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
-            </div>
-        </div>
-        <div class="sm:hidden md:hidden lg:hidden xl:block print:hidden">
-            <div class="container mx-auto py-6 bg-gray-200 dark:bg-gray-900 rounded-xl mb-3">
-                <p class="text-center text-gray-600 dark:text-gray-400">© 2023 Nathan Bonnell - CV</p>
-            </div>
-        </div>
-        <div class="sm:hidden md:hidden lg:hidden xl:hidden print:block" id="notlittelest">
-            
-        </div>
-    </footer>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/script.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': '#3490dc',
-                        'secondary': '#ffed4a',
-                        'danger': '#e3342f',
-                    },
-                }
+    </div>
+</footer>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="src/script.js"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'primary': '#3490dc',
+                    'secondary': '#ffed4a',
+                    'danger': '#e3342f',
+                },
             }
         }
-    </script>
+    }
+</script>
+
 </html>
