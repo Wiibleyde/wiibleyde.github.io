@@ -14,6 +14,7 @@ body {
   margin: 0;
   background-image: url(./himitsu.jpg);
   background-size: cover;
+  background-position-y: 35%;
 }
 
 body {

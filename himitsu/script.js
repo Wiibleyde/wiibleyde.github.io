@@ -27,10 +27,12 @@
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
       if (distance < 0) {
-        document.getElementById("headline").innerText = "Happy Birthday!";
+        document.getElementById("headline").innerText = "Himitsu is here";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "block";
-        document.getElementById("cake").style.display = "block";
+        
+        document.getElementById("background").style.backgroundImage = "url(./newbg.jpg)";
+        document.getElementById("background").style.backgroundSize = "cover";
         clearInterval(x);
       } else {
         document.getElementById("cake").style.display = "none";
