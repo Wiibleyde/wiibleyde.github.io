@@ -27,15 +27,16 @@
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
       if (distance < 0) {
-        document.getElementById("headline").innerText = "Himitsu is here";
+        document.getElementById("headline").innerText = "Himitsu arrive très bientôt !";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "block";
-        
         document.getElementById("background").style.backgroundImage = "url(./newbg.jpg)";
         document.getElementById("background").style.backgroundSize = "cover";
         clearInterval(x);
       } else {
-        document.getElementById("cake").style.display = "none";
+        document.getElementById("headline").innerText = "Temps avant l'arrivée d'Himitsu";
+        document.getElementById("background").style.backgroundImage = "url(./himitsu.jpg)";
+        document.getElementById("background").style.backgroundSize = "cover";
       }
     }, 0)
 }());
