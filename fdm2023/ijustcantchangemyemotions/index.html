@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>I Just Can't Change My Emotions - FDM 2023</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background-image: url(../assets/background_16-9.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-black bg-opacity-50 p-0 w-full h-screen">
+            <div class="flex flex-col items-center justify-center h-full">
+                <div class="flex flex-col items-center justify-center w-1/2 h-1/5">
+                    <h1 class="text-5xl font-bold text-white">Basixx - I Just Can't Change My Emotions</h1>
+                </div>
+                <div class="flex flex-col items-center justify-center w-1/2 h-1/5">
+                    <button onclick="nextStep()" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 bg-blue-500 text-white font-bold py-2 px-4 rounded-full">Danse suivante</button>
+                    <button onclick="resetSteps()" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-red-600 bg-red-500 text-white font-bold py-2 px-4 rounded-full">Reset</button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-1/2 h-1/5">
+                    <p class="text-lime-500 font-black">A enregistrer : Summer dans catégorie "SUMMER"</p>
+                </div>
+                <div id="steps">
+                    <p class="text-lime-500" id="0">00:00 Summer</p>
+                    <p class="text-white" id="1">00:16 Hiding dance (57) Après "I just can't change my emotions"</p>
+                    <p class="text-white" id="2">00:31 Uncle disco (29) Après "I just can't change my emotions"</p>
+                    <p class="text-white" id="3">00:46 Danse pointe des pieds (49) Après "I just can't change my emotions"</p>
+                    <p class="text-white" id="4">01:17 Ca revient quand ? (6) à "Baby"</p>
+                    <p class="text-lime-500" id="5">01:32 Summer après "But baby, you gonna love me again, love me again"</p>
+                    <p class="text-white" id="6">01:48 Uncle disco (29) après "...love me again, lovе me again"</p>
+                    <p class="text-white" id="7">02:19 Danse pointe des pieds (49) Après "I just can't change my emotions"</p>
+                    <p class="text-white" id="8">02:50 Raise the Roof (20) après "Your sweet emotion-eh-woo"</p>
+                    <p class="text-white" id="9">03:05 Danse pointe des pieds (49)</p>
+                </div>
+                <div>
+                    <!-- audio player mp3 -->
+                    <audio id="audio" controls>
+                        <source src="music.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <script>
+            let steps = 0;
+            let stepsContainer = document.getElementById('steps');
+            let stepsList = stepsContainer.getElementsByTagName('p');
+            let stepsListLength = stepsList.length;
+
+            function nextStep() {
+                if (steps < stepsListLength) {
+                    stepsList[steps].style.textDecoration = "underline overline #FF3028"
+                    stepsList[steps].style.textDecorationStyle = "dashed";
+                    stepsList[steps].style.textDecorationThickness = "3px";
+                    stepsList[steps].style.textDecorationSkipInk = "none";
+                    for (let i = 0; i < stepsListLength; i++) {
+                        if (i != steps) {
+                            stepsList[i].style.textDecoration = 'none';
+                        }
+                    }
+                    steps++;
+                }
+            }
+
+            function resetSteps() {
+                for (let i = 0; i < stepsListLength; i++) {
+                    stepsList[i].style.textDecoration = 'none';
+                }
+                steps = 0;
+            }
+        </script>
+    </body>
+</html>
