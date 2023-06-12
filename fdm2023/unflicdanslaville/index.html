@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Un flic dans la ville - Katsu</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background-image: url(../assets/background_16-9.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-black bg-opacity-70 p-0 w-full h-screen">
+            <div class="flex flex-col items-center justify-center h-full">
+                <a href="/fdm2023/" class="text-white font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 bg-blue-500 text-white font-bold py-2 px-4 rounded-full">Home</a>
+                <div class="flex flex-col items-center justify-center w-1/2 h-1/5">
+                    <h1 class="text-5xl font-bold text-white">Un flic dans la ville - Katsu</h1>
+                </div>
+                <div class="flex flex-col items-center justify-center w-1/2 h-1/5">
+                    <button onclick="nextStep()" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 bg-blue-500 text-white font-bold py-2 px-4 rounded-full">Danse suivante</button>
+                    <button onclick="resetSteps()" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-red-600 bg-red-500 text-white font-bold py-2 px-4 rounded-full">Reset</button>
+                </div>
+                <div id="steps">
+                    <p class="text-white" id="0">00:00 Danse Année 90 (8)</p>
+                    <p class="text-white" id="1">00:18 Let-s Groove (4)</p>
+                    <p class="text-white" id="2">00:34 Danse sur le téco (33)</p>
+                    <p class="text-white" id="3">00:51 Slow Shaking (24)</p>
+                    <p class="text-white" id="4">01:01 TOC TOC TOC (28)</p>
+                    <p class="text-white" id="5">01:15 Oh Snap (14)</p>
+                    <p class="text-white" id="6">01:29 FUCK YEAAAH (59)</p>
+                    <p class="text-white" id="7">02:03 Danse pointe des pieds (49)</p>
+                    <p class="text-white" id="8">02:16 Let-s Groove (4)</p>
+                    <p class="text-white" id="9">02:33 Danse sur le téco (33)</p>
+                    <p class="text-white" id="10">02:48 Danse Année 90 (8)</p>
+                </div>
+                <div>
+                    <!-- audio player mp3 -->
+                    <audio id="audio" controls>
+                        <source src="music.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <script>
+            let steps = 0;
+            let stepsContainer = document.getElementById('steps');
+            let stepsList = stepsContainer.getElementsByTagName('p');
+            let stepsListLength = stepsList.length;
+
+            function nextStep() {
+                if (steps < stepsListLength) {
+                    stepsList[steps].style.textDecoration = "underline overline #FF3028"
+                    stepsList[steps].style.textDecorationStyle = "dashed";
+                    stepsList[steps].style.textDecorationThickness = "3px";
+                    stepsList[steps].style.textDecorationSkipInk = "none";
+                    for (let i = 0; i < stepsListLength; i++) {
+                        if (i != steps) {
+                            stepsList[i].style.textDecoration = 'none';
+                        }
+                    }
+                    steps++;
+                } else {
+                    steps = 0;
+                    for (let i = 0; i < stepsListLength; i++) {
+                        stepsList[i].style.textDecoration = 'none';
+                    }
+                }
+            }
+
+            function resetSteps() {
+                for (let i = 0; i < stepsListLength; i++) {
+                    stepsList[i].style.textDecoration = 'none';
+                }
+                steps = 0;
+            }
+        </script>
+    </body>
+</html>
