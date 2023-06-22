@@ -1,37 +1,46 @@
-(function () {
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-    let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "01/01/",
-        birthday = dayMonth + yyyy;
-    today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-        birthday = dayMonth + nextYear;
+function timer(year, month, day, hour, minute, second) {
+    let targetDate = new Date(year, month - 1, day, hour, minute, second)
+    let currentDate = new Date()
+
+    let timeRemaining = targetDate - currentDate
+
+    if (timeRemaining <= 0) {
+        return true
+    } else {
+        let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
+        let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))
+        let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000)
+
+        document.getElementById('days').textContent = days
+        document.getElementById('hours').textContent = hours
+        document.getElementById('minutes').textContent = minutes
+        document.getElementById('seconds').textContent = seconds
+
+        return false
     }
-    const countDown = new Date(birthday).getTime(),
-        x = setInterval(function () {
-            const now = new Date().getTime(),
-                distance = countDown - now;
-            document.getElementById("days").innerText = Math.floor(distance / (day)), document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)), document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (
-                minute)), document.getElementById("seconds").innerText = Math.floor((distance % (minute)) /
-                    second);
-            if (distance < 0) {
-                document.getElementById("headline").innerText = "BONNE ANNÉE !";
-                document.getElementById("countdown").style.display = "none";
-                document.getElementById("content").style.display = "block";
-                document.getElementById("canvas").style.display = "block";
-                clearInterval(x);
-            } else {
-                document.getElementById("canvas").style.display = "none";
-            }
-        }, 0)
-}());
+}
+
+function updateTimer() {
+    let year = new Date().getFullYear() + 1
+    let month = 1
+    let day = 1
+    let hour = 0
+    let minute = 0
+    let second = 0
+
+    let timerFinished = timer(year, month, day, hour, minute, second)
+
+    if (timerFinished) {
+        document.getElementById("headline").innerText = "BONNE ANNÉE !";
+        document.getElementById("countdown").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.getElementById("canvas").style.display = "block";
+    } else {
+        document.getElementById("canvas").style.display = "none";
+        setTimeout(updateTimer, 100)
+    }
+}
 
 $(function () {
     var canvas = $('#canvas')[0];
@@ -175,3 +184,5 @@ $(function () {
         }
     }
 })
+
+updateTimer()
