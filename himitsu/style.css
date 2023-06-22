@@ -278,3 +278,22 @@ li span {
   background-color: rgba(128, 128, 128, 0.418);
   border-radius: 6px;
 }
+
+.countdown-finished {
+  animation-name: myAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+  0% {
+    /* Initial state of the countdown element */
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    /* Final state of the countdown element */
+    opacity: 0;
+    transform: scale(0);
+  }
+}
