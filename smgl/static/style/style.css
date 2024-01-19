@@ -295,6 +295,33 @@ header {
     animation: messageDiv 3s infinite;
 }
 
+#countdown {
+    padding: 10px;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgba(240, 235, 235, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.countdown-element {
+    padding: 10px;
+}
+
 @keyframes messageDiv {
     0% {
         opacity: 1;
@@ -489,5 +516,33 @@ header {
 
     .urgent-text {
         font-size: 2vh;
+    }
+
+    #countdown {
+        z-index: 100;
+        font-size: 2vh;
+        text-align: center;
+        color: black;
+        background-color: rgb(240, 235, 235);
+        border-radius: 5px;
+        position: absolute;
+        top: 45%;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #countdown-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .countdown-element {
+        padding: 10px;
     }
 }
