@@ -3,72 +3,162 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WaitingScreen</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-frame {
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        .title {
+            font-size: 900%;
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .ml4 {
+            position: relative;
+            font-weight: 700;
+            font-size: 2.5em;
+        }
+
+        .ml4 .letters {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0.3em;
+            right: 0;
+            opacity: 0;
+        }
+
+        .logo {
+            top: 0;
+            left: 0;
+            width: 30%;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="gta-text foreground">
-        <!-- <img src="https://fontmeme.com/permalink/230401/6badce058f7879638241a9a9fa2af663.png"
-            alt="police-grand-theft-auto" border="0"> -->
-        <div class="wiibleyde-title">
-            <img src="https://fontmeme.com/permalink/230402/77f3be1374466e73a09f215b49c9f262.png"
-                alt="police-grand-theft-auto" border="0">
-        </div>
-        <div class="gta-text">
-            <div id="container">
-                <h1 id="text-anim"></h1>
-            </div>
-        </div>
-    </div>
-    <div class="opacity-div"></div>
-    <div class="wrapper background">
-        <div>
-            <img src="./assets/1.jpg">
-            <!-- <video src="assets/GTACinematic2.mp4" autoplay muted></video> -->
-        </div>
-        <div>
-            <img src="./assets/2.jpg">
-        </div>
-        <div>
-            <img src="./assets/3.jpg">
-        </div>
-        <div>
-            <img src="./assets/4.jpg">
-        </div>
-        <div>
-            <img src="./assets/5.jpg">
-        </div>
-        <div>
-            <img src="./assets/6.jpg">
-        </div>
-        <div>
-            <img src="./assets/7.jpg">
-        </div>
-        <div>
-            <img src="./assets/8.jpg">
-        </div>
-        <div>
-            <img src="./assets/9.jpg">
-        </div>
-        <div>
-            <img src="./assets/10.jpg">
-        </div>
-        <div>
-            <img src="./assets/11.jpg">
-        </div>
-        <div>
-            <img src="./assets/12.jpg">
-        </div>
-        <div>
-            <img src="./assets/13.jpg">
-        </div>
-        <div>
-            <img src="./assets/14.jpg">
-        </div>
+    <iframe src="https://panel.hope-rp.com/public/background" width="100%" height="100%"
+        class="background-frame"></iframe>
+    <div class="container">
+        <image src="https://panel.hope-rp.com/static/img/hope.png" width="100%" height="100%" class="logo"></image>
+        <p class="title">Wiibleyde</p>
+        <div id="text-loop"></div>
     </div>
 </body>
-<script src='./script.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+<script>
+    function getUrlParam(paramName) {
+        const params = new URLSearchParams(location.search);
+        return params.get(paramName);
+    }
+
+    const customBackground = getUrlParam('background');
+    if (customBackground) {
+        const backgroundFrame = document.querySelector('.background-frame');
+        backgroundFrame.src = customBackground;
+    }
+
+    const text1 = getUrlParam('text1') || 'Le stream arrive !';
+    const text2 = getUrlParam('text2') || 'Veuillez patienter !';
+    const text3 = getUrlParam('text3') || 'Sisi, c\'est bientôt !';
+
+    const texts = [text1, text2, text3]
+
+    console.log(texts);
+
+    const textLoop = document.getElementById('text-loop');
+
+    texts.forEach((text, index) => {
+        const textElement = document.createElement('div');
+        textElement.classList.add('ml4');
+        textElement.innerHTML = `<span class="letters letters-${index + 1}">${text}</span>`;
+        textLoop.appendChild(textElement);
+        console.log(textElement, index+1);
+    });
+
+    var ml4 = {};
+    ml4.opacityIn = [0, 1];
+    ml4.scaleIn = [0.2, 1];
+    ml4.scaleOut = 3;
+    ml4.durationIn = 800;
+    ml4.durationOut = 600;
+    ml4.delay = 5000;
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml4 .letters-1',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-1',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4 .letters-2',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-2',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4 .letters-3',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-3',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        })
+</script>
 
 </html>
