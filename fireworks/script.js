@@ -18,9 +18,9 @@ $(function() {
 	// objects
 	var listFire = [];
 	var listFirework = [];
-	var fireNumber = 10;
+	var fireNumber = 20;
 	var center = { x: canvas.width / 2, y: canvas.height / 2 };
-	var range = 100;
+	var range = 500;
 	for (var i = 0; i < fireNumber; i++) {
 		var fire = {
 			x: Math.random() * range / 2 - range / 4 + center.x,
