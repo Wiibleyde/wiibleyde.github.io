@@ -1,7 +1,9 @@
-body: {
+body {
 	padding: 0;
+	background-color: transparent;
 }
 
 canvas {
 	display: block;
+	background-color: transparent;
 }
