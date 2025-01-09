@@ -32,6 +32,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
 
         .container {
@@ -75,10 +76,10 @@
 </head>
 
 <body>
-    <iframe src="https://panel.hope-rp.com/public/background" width="100%" height="100%"
-        class="background-frame"></iframe>
+    <video autoplay muted loop id="myVideo" class="background-frame">
+        <source src="./background.mp4" type="video/mp4">
+    </video>
     <div class="container">
-        <image src="https://panel.hope-rp.com/static/img/hope.png" width="100%" height="100%" class="logo"></image>
         <p class="title">Wiibleyde</p>
         <div id="text-loop"></div>
     </div>
@@ -100,8 +101,6 @@
     const text3 = getUrlParam('text3') || 'Sisi, c\'est bientôt !';
 
     const texts = [text1, text2, text3]
-
-    console.log(texts);
 
     const textLoop = document.getElementById('text-loop');
 
