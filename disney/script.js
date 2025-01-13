@@ -22,22 +22,28 @@ function timer(year, month, day, hour, minute, second) {
 }
 
 function updateTimer() {
-    let year = new Date().getFullYear() + 1
-    let month = 2
-    let day = 16
-    let hour = 0
-    let minute = 0
-    let second = 0
+    let currentDate = new Date();
+    let year = currentDate.getFullYear();
+    let month = 2;
+    let day = 16;
+    let hour = 0;
+    let minute = 0;
+    let second = 0;
 
-    let timerFinished = timer(year, month, day, hour, minute, second)
+    let targetDate = new Date(year, month - 1, day, hour, minute, second);
+    if (currentDate >= targetDate) {
+        year += 1;
+    }
+
+    let timerFinished = timer(year, month, day, hour, minute, second);
 
     if (timerFinished) {
         document.getElementById("headline").innerText = "Happy Birthday!";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "block";
     } else {
-        setTimeout(updateTimer, 100)
+        setTimeout(updateTimer, 100);
     }
 }
 
-updateTimer()
+updateTimer();
