@@ -38,7 +38,7 @@ function updateTimer() {
     let timerFinished = timer(year, month, day, hour, minute, second);
 
     if (timerFinished) {
-        document.getElementById("headline").innerText = "Happy Birthday!";
+        document.getElementById("headline").innerText = "OMG C'EST AUJOURD'HUI !";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "block";
     } else {
